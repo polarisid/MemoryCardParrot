@@ -1,0 +1,52 @@
+body{
+    box-sizing: border-box;
+    background-color: #EEF9BF;
+    font-family: 'Righteous', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteudo{
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.titulo-container{
+    width: 100%;
+    
+    background-color: red;
+    text-align: center;
+}
+
+h1 {
+    color:#75B79E;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+
+}
+
+.cartas-container{
+    width: 100%;
+    height: 100px;
+    background-color: chartreuse;
+    display: flex;
+}
+
+
+.card{
+    display: none;
+    background-color: saddlebrown;
+    width: 220px;
+    height: 220px;
+
+    margin: 10px;
+}
+
+.mostrar{
+    display: flex;
+}
