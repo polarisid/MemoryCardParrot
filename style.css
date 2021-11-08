@@ -98,9 +98,58 @@ h1 {
     display: flex;
 }
 
+
+
+.contador-container{
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    background-color: #A7E9AF;
+    width: 100px;
+    height: auto;
+    top:10px;
+    right: 10px;
+    border-radius: 10px;
+}
+
+.contador{
+    font-size: 30px;
+}
+.text{
+    padding-bottom: 10px;
+}
+.contador, .text{
+margin-top:10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 @media (max-width:614px){
     .cartas-container{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
+    .contador-container{
+        top:5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        width: auto;
+        
+    }
+    .text{
+        padding-right: 5px;
+        padding-left: 2px;
+        
+    }
+    .contador{
+        margin-top: 0px;        
+        padding-left: 5px;
+        font-size: 30px;
+    }
 }

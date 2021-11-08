@@ -1,6 +1,9 @@
 
 let contador_finish =0;
 let contador_de_jogadas=0;
+let tempo = 0;
+let idinterval;
+
 let cards = window.prompt("Com quantas cartas você deseja jogar?", "4 a 14");
 const imgs =["bobrossparrot","explodyparrot","fiestaparrot","metalparrot","revertitparrot","tripletsparrot","unicornparrot"] ;
 
@@ -8,7 +11,19 @@ if(((cards%2)!==0) || cards>14 || cards <4){
     alert("Por favor Insira números pares e na faixa de 4-14");
     location.reload();
 }
+contar()
 
+function contar() {
+
+const contator = document.querySelector(".contador");
+idinterval = setInterval(incrementar, 1000);
+}
+
+function incrementar() {
+  tempo++;
+  const contator = document.querySelector(".contador");
+  contator.innerHTML = tempo;
+}
 
 let list1=gerar_lista(parseInt(cards)/2);
 list1.sort(comparador);
@@ -104,8 +119,11 @@ return list;
 function alertare(){
 
   alert("Você ganhou! Você fez em "+ contador_de_jogadas+ " Jogadas");
-  location.reload();
-
+  let febck=prompt("Você deseja começar um novo game? Digite 'sim' ou nao")
+  if(febck=="sim"){
+    location.reload();
+  }
+ 
 }
 
 
@@ -114,14 +132,4 @@ function alertare(){
 function comparador() { 
 	return Math.random() - 0.5; 
 }
-
-//const cardes=card.querySelector(".card-1");
-  
-  
- 
-
-
-
-
-//console.log(parseInt(cards));
 
