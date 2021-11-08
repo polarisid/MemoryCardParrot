@@ -84,7 +84,7 @@ function clickCard(element){
       
       //se o jogo já encerrou
       if(contador_finish==(parseInt(cards)/2)){
-        setTimeout(alertare, 1800);
+        setTimeout(alertare, 1200);
       }
     }
     //se não for par
@@ -118,7 +118,7 @@ return list;
 }
 function alertare(){
 
-  alert("Você ganhou! Você fez em "+ contador_de_jogadas+ " Jogadas");
+  alert("Você ganhou! Você fez em "+ contador_de_jogadas+ " Jogadas e com tempo de: "+ tempo+" segundos");
   let febck=prompt("Você deseja começar um novo game? Digite 'sim' ou nao")
   if(febck=="sim"){
     location.reload();
