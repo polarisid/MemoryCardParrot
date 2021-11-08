@@ -3,18 +3,19 @@ body{
     background-color: #EEF9BF;
     font-family: 'Righteous', cursive;
     font-family: 'Roboto', sans-serif;
+
 }
 
 .conteudo{
     width: 100%;
     height: 100%;
-    background-color: blueviolet;
+
 }
 
 .titulo-container{
+    padding-top: 40px;
     width: 100%;
     
-    background-color: red;
     text-align: center;
 }
 
@@ -31,10 +32,15 @@ h1 {
 }
 
 .cartas-container{
-    width: 100%;
-    background-color: chartreuse;
+    padding-top: 50px ;
+    margin:0 auto;
+    width: 80%;
+
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -72,11 +78,19 @@ h1 {
     transform: rotateY(180deg);
   }
 
-  .card:hover .back-face {
-    transform: rotateY(0deg);
+ 
+
+  .mostrar-card {
+    transition-duration: 500ms;
+    transform: rotateY(-180deg);
   }
 
-  .card:hover .front-face {
+.revirar{
+    transition-duration: 1000ms;
+    transform: rotateY(0deg);
+}
+
+  .feito-par{
     transform: rotateY(-180deg);
   }
 
@@ -84,3 +98,9 @@ h1 {
     display: flex;
 }
 
+@media (max-width:614px){
+    .cartas-container{
+        flex-direction: column;
+    }
+
+}
