@@ -41,19 +41,19 @@ for(let i=0;i<parseInt(cards)/2;i++){
   card_container.innerHTML+= `
   <div class="card" onclick="clickCard(this)" data-identifier="card"> \n
   <div class="card-face front-face" data-identifier="front-face">\n
-    <img src="/assets/front.png" alt="">\n
+    <img src="./assets/front.png" alt="">\n
   </div>\n
   <div class ="card-face back-face" data-identifier="back-face">
-      <img src="/assets/${imgs[list1[i]]}.gif" alt="">\n
+      <img src="./assets/${imgs[list1[i]]}.gif" alt="">\n
   </div>\n
 </div>
 
   <div class="card" onclick="clickCard(this)" data-identifier="card"> \n
   <div class="card-face front-face" data-identifier="front-face">\n
-    <img src="/assets/front.png" alt="">\n
+    <img src="./assets/front.png" alt="">\n
   </div>\n
   <div class ="card-face back-face" data-identifier="back-face">
-      <img src="/assets/${imgs[list2[i]]}.gif" alt="">\n
+      <img src="./assets/${imgs[list2[i]]}.gif" alt="">\n
   </div>\n
 </div>
 `
