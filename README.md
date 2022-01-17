@@ -4,6 +4,7 @@ Let's test how good your memory is today?
 <!-- <img src="/assets/my-wallet-usage.gif" /> -->
 
 Try it out now at
+https://polarisid.github.io/Jogo-da-MemoriaHTML-CSS-JS/
 
 ## About
 
